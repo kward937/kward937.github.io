@@ -1,0 +1,92 @@
+body {
+    background-color: #2e2e2e;
+    margin: 0px;
+}
+
+a {
+    color:rgb(0, 255, 234);
+    text-decoration: none;
+    font-family: FoundrySterlingOT3W03-Bold,FoundrySterlingOT3W10-Bold,Arial,Helvetica,sans-serif;
+    font-weight: 900;
+    right: 0px;
+}
+
+a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.nav-custom {
+    padding-top: 40px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 97rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-custom > a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    margin-top: -20px;
+    max-height: 90px;
+}
+
+.linkedin {
+width: 40px;
+height: 40px;
+margin-top: -7px;
+}
+
+.intro {
+    margin-top: 400px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: xx-large;
+}
+
+#kevin {
+    color: rgb(0, 255, 234);
+}
+
+#resume {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 20px;
+    height: 50px;
+    width: 130px;
+    font-size: large;
+    border-width: 3px;
+    border-color: rgb(0, 255, 234);
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    line-height: 45px;
+    justify-content: center;
+    font-family: montserrat, sans-serif;
+
+}
+
+#resume:hover {
+    transform: scale(1.1);
+    color:rgb(0, 255, 234);
+}
+
+#skills {
+    margin-top: 100px;
+}
+
+body {
+    size: 100%;
+}
