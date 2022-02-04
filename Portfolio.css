@@ -102,3 +102,30 @@ li {
     font-family: montserrat, sans-serif;
     font-size: xx-large;
 }
+
+.about {
+    margin-top: 800px;
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-size: xx-large;
+    text-align: left;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 920px;
+    color: white;
+    font-size: xx-large;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    margin-bottom: 450px;
+
+}
+
+#about-scroll {
+    margin-top: 500px;
+}
+
+#contact-scroll {
+    margin-top: 920px;
+}
