@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="stylesheet"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>function myFunction(x) {
       x.classList.toggle("change");
     }</script>
@@ -29,14 +32,22 @@
   <div>
     <div class="main-image">
     </div>
-    <div class="intro">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div>
+    <div class="intro"data-aos-once="true" data-aos-duration="1300" data-aos-offset="0" data-aos="fade-up" data-aos-anchor=".navbar">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div>
   
   </div>
+  <script>
+    AOS.init();
+
+window.addEventListener('load', function() {
+  AOS.refresh();
+});
+  </script>
 </body>
 <main>
   <div id="skill-scroll"></div>
-<div class="skills">
-<ul  class="skills">
+<div data-aos="fade-left" class="skills">
+<ul class="skills">
+  <li style="font-size:80px">Known Languages</li>
   <li>HTML5</li>
   <li>CSS</li>
   <li>Javascript</li>
@@ -49,8 +60,8 @@
   </ul>
 </div>
 <div id="about-scroll"></div>
-<div class="about" id="about">I'm a self taught developer with a love for all things technology, and I feel it will continue to be a lifelong passion of mine.<br> From an early age, I started tinkering with computers(sometimes breaking them) and the tinkering never stopped. I've setup linux systems and experimented with various languages and software areas giving me a well rounded understanding of most current tech.<br> I'm currently working on learning Bootstrap and Jquery to make more responsive pages and over time this site will evolve to showcase it.</div>
-<div class="contact" id="contact-scroll">Contact me!</div>
+<div class="about" id="about" data-aos="fade-right">I'm a self taught developer with a love for all things technology, and I feel it will continue to be a lifelong passion of mine.<br> From an early age, I started tinkering with computers(sometimes breaking them) and the tinkering never stopped. I've setup linux systems and experimented with various languages and software areas giving me a well rounded understanding of most current tech.<br> I'm currently working on learning Bootstrap and Jquery to make more responsive pages and over time this site will evolve to showcase it.</div>
+<div data-aos="fade-down" class="contact" id="contact-scroll">Contact me!</div>
 </main>
 </div>
 </html>
