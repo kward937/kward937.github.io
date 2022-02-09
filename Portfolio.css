@@ -1,13 +1,76 @@
-html {
-    scroll-behavior: smooth;
-}
-body {
-    background-color: #2e2e2e;
-    margin: 0px;
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
+header {  
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+    background: #333;
+  }
+
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 580px) {
+    .hamburger, .bar1, .bar2, .bar3 {display: none;}
+}
+
+@media (max-width: 580px) {
+    a:not(.linkedin) {display: none;}
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+body {
+    background: linear-gradient(-45deg, #57ec00, #ff0000, #002fff, #00f7ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 a {
-    color:rgb(0, 255, 234);
+    color:#0077B5;
     text-decoration: none;
     font-family: FoundrySterlingOT3W03-Bold,FoundrySterlingOT3W10-Bold,Arial,Helvetica,sans-serif;
     font-weight: 900;
@@ -17,23 +80,7 @@ a {
 a:hover {
     color: white;
     transform: scale(1.2);
-}
-
-.nav-custom {
-    padding-top: 40px;
-    height: 50px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    max-width: 97rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav-custom > a{
-    padding-left: 30px;
-    padding-right: 30px;
+    text-decoration: none;
 }
 
 .header {
@@ -47,43 +94,22 @@ a:hover {
 .linkedin {
 width: 40px;
 height: 40px;
-margin-top: -7px;
+
 }
 
 .intro {
     margin-top: 400px;
     text-align: center;
-    font-family: montserrat, sans-serif;
-    color: white;
-    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
 }
-
+nav {
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+}
 #kevin {
-    color: rgb(0, 255, 234);
-}
-
-#resume {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    margin-top: 20px;
-    height: 50px;
-    width: 130px;
-    font-size: large;
-    border-width: 3px;
-    border-color: rgb(0, 255, 234);
-    background-color: transparent;
-    color: white;
-    padding: 0px;
-    line-height: 45px;
-    justify-content: center;
-    font-family: montserrat, sans-serif;
-
-}
-
-#resume:hover {
-    transform: scale(1.1);
-    color:rgb(0, 255, 234);
+    color: rgb(255, 255, 255);
 }
 
 .skills {
@@ -93,7 +119,7 @@ margin-top: -7px;
     left: 100px;
     padding: 10px;
     margin-top: 250px;
-    
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
 }
 
 li {
@@ -110,6 +136,7 @@ li {
     font-size: xx-large;
     text-align: left;
     justify-content: center;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
 }
 
 .contact {

@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html id="top">
-<div class="header" id="home">
-    <nav position: fixed; class="nav-custom";>
-      <a href="https://www.linkedin.com/in/kward937"><img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>function myFunction(x) {
+      x.classList.toggle("change");
+    }</script>
+  </head>
+  <div class="container-fluid p-0 py-0">
+    
+<header id="home">
+    <nav position: fixed; class="navbar navbar-expand-xxl navbar-dark py-2";>
+      <a class="linkedin" href="https://www.linkedin.com/in/kward937"><img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
       <a href=#top>Home</a>
       <a href=#skill-scroll>Skills</a>
       <a href=#about-scroll>About</a>
       <a href=#contact-scroll>Contact</a>
+
+      <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+      </div>
     </nav></div>
-<link rel="stylesheet" href="Portfolio.css">>
+<link rel="stylesheet" href="Portfolio.css">
 <body>
   <div>
     <div class="main-image">
     </div>
     <div class="intro">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div>
-    <button id="resume" href="resume.pdf" download="Kevin Ward Resume">Resume</button>
+  
   </div>
 </body>
 <main>
@@ -24,6 +40,8 @@
   <li>HTML5</li>
   <li>CSS</li>
   <li>Javascript</li>
+  <li>SASS</li>
+  <li>React</li>
   <li>SQL</li>
   <li>Java</li>
   <li>Python</li>
@@ -31,7 +49,8 @@
   </ul>
 </div>
 <div id="about-scroll"></div>
-<div class="about" id="about">I'm a self taught programmer with a love for all things technology, and I feel it will continue to be a lifelong passion of mine.<br> From an early age, I started tinkering with computers(sometimes breaking them) and the tinkering never stopped. I've setup linux systems and experimented with various languages and software areas giving me a well rounded understanding of most current tech.<br> I'm currently working on learning Bootstrap and Jquery to make more responsive pages and over time this site will evolve to showcase it.</div>
+<div class="about" id="about">I'm a self taught developer with a love for all things technology, and I feel it will continue to be a lifelong passion of mine.<br> From an early age, I started tinkering with computers(sometimes breaking them) and the tinkering never stopped. I've setup linux systems and experimented with various languages and software areas giving me a well rounded understanding of most current tech.<br> I'm currently working on learning Bootstrap and Jquery to make more responsive pages and over time this site will evolve to showcase it.</div>
 <div class="contact" id="contact-scroll">Contact me!</div>
 </main>
+</div>
 </html>
