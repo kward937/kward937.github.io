@@ -1,82 +1,112 @@
 <!DOCTYPE html>
-<html id="top">
-  <head>
+<html id="top" lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="stylesheet"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>function myFunction(x) {
-      x.classList.toggle("change");
+        x.classList.toggle("change");
     }</script>
-  </head>
-  <div class="container-fluid p-0 py-0" style="background-color: black;">
-    
-<header id="home">
-    <nav position: fixed; class="navbar navbar-expand-xxl navbar-dark py-2";>
-      <a class="linkedin" href="https://www.linkedin.com/in/kward937"><img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
-      <a href=#skill-scroll>Skills</a>
-      <a href=#about-scroll>About</a>
-      <a href=#contact-scroll>Contact</a>
+    <title></title>
+</head>
+<div class="container-fluid p-0 py-0" style="background-color: black;">
 
-      <div class="hamburger" onclick="myFunction(this)">
-        <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-      </div>
-    </nav></div>
+    <header id="home">
+        <nav class="navbar navbar-expand-xxl navbar-dark py-2">
+            <a class="linkedin" href="https://www.linkedin.com/in/kward937"><img class="linkedin"
+                                                                                 src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                                                                                 alt="Linkedin Logo"></a>
+            <a href=#skill-scroll>Skills</a>
+            <a href=#about-scroll>About</a>
+            <a href=#contact-scroll>Contact</a>
+            <a href="https://indianhallowcampground.com">Sites I've Built</a>
+
+            <div class="hamburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+</div>
 <link rel="stylesheet" href="Portfolio.css">
 <div class="pagewrap">
-<body>
-  <div>
-    <div class="main-image">
-    </div>
-    <div class="intro"data-aos-once="true" data-aos-duration="1300" data-aos-offset="0" data-aos="fade-up" data-aos-anchor=".navbar"><img class="introimage" src="introimage.png"><div class="introtext">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div></div>
-  
-  </div>
-  <script>
-    AOS.init();
+    <div>
+        <div class="main-image">
+        </div>
+        <div class="intro" data-aos-once="true" data-aos-duration="1300" data-aos-offset="0" data-aos="fade-up"
+             data-aos-anchor=".navbar"><img class="introimage" src="introimage.png" alt="Developer sitting at computer">
+            <div class="introtext">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div>
+        </div>
 
-window.addEventListener('load', function() {
-  AOS.refresh();
-});
-  </script>
-</body>
-<main>
-  <div>
-<div data-aos="fade-left" data-aos-offset="800" data-aos-duration="1300" data-aos-once="true" class="skills container-fluid">
-  <div class="skillsTitle">Known Languages/Frameworks</div>
-  <div id="skill-scroll"></div>
-<div class="row">
-<div class="col-6">
-<ul class="skillsList">
-  <li style="font-size:80px"></li>
-  <li>HTML5<img src="html5Logo.png" style="height: 120px; width: 140px;"></li>
-  <li>CSS<img src="cssLogo.png" style="height: 120px; width: 95px;"></li>
-  <li>Javascript<img src="javascriptLogo.png" style="height: 110px; width: 100px;"></li>
-  <li>SASS<img src="sassLogo.png"  style="height: 110px; width: 160px;"></li>
-  <li>React<img src="reactLogo.png" style="height: 120px; width: 140px;"></li></div><div class="col-6">
-    <ul class="skillsList">
-<li>Bootstrap<img src="bootstrapLogo.png" style="height: 110px; width: 110px;"></li>
-  <li>SQL<img src="sqlLogo.png" style="height: 120px; width: 100px;"></li>
-  <li>Java<img src="javaLogo.png" style="height: 120px; width: 100px;"></li>
-  <li>Python<img src="pythonLogo.png" style="height: 120px; width: 120px;"></li>
-  <li>.NET<img src="aspLogo.png" style="height: 70px; width: 160px;"></li>
-  <li>PHP<img src="phpLogo.png" style="height: 120px; width: 160px;"></li>
-  </ul>
-</div></div>
-<div id="about-scroll"></div>
-<div  data-aos="fade-right" data-aos-once="true" class="aboutWrap container-fluid">
-  About Me!
-<div class="about" id="about">I'm a self taught developer with a love for all things technology, and I feel it will continue to be a lifelong passion of mine.<br><br> From an early age, I started tinkering with computers(sometimes breaking them) and the tinkering never stopped. I've setup linux systems and experimented with various languages and software areas giving me a well rounded understanding of most current tech.<br><br> I'm currently working on learning Bootstrap and Jquery to make more responsive pages and over time this site will evolve to showcase it.</div>
-</div>
-<div data-aos="fade-down" data-aos-once="true" class="contact row">
-  <div class="col-3"></div>
-  <div class="col"><a class="bottomLinks" href="https://www.linkedin.com/in/kward937"><img src="linkedinLogo.png" style="height: 70px; width: 70px;"></a></div>
-  <div class="col"><a class="bottomLinks" href="mailto:ward.kevinb@gmail.com"><img src="emailLogo.png" style="height: 60px; width: 80px;"></a></div>
-  <div class="col-3" id="contact-scroll"></div>
-</div>
-</main>
+    </div>
+    <script>
+        AOS.init();
+
+        window.addEventListener('load', function () {
+            AOS.refresh();
+        });
+    </script>
+    <main>
+        <div>
+            <div data-aos="fade-left" data-aos-offset="800" data-aos-duration="1300" data-aos-once="true"
+                 class="skills container-fluid">
+                <div class="skillsTitle">Known Languages/Frameworks</div>
+                <div id="skill-scroll"></div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="skillsList">
+                            <li style="font-size:80px"></li>
+                            <li>HTML5<img src="html5Logo.png" style="height: 120px; width: 140px;" alt="HTML5 Logo">
+                            </li>
+                            <li>CSS<img src="cssLogo.png" style="height: 120px; width: 95px;" alt="CSS Logo"></li>
+                            <li>Javascript<img src="javascriptLogo.png" style="height: 110px; width: 100px;"
+                                               alt="Javascript Logo"></li>
+                            <li>SASS<img src="sassLogo.png" style="height: 110px; width: 160px;" alt="SASS Logo"></li>
+                            <li>React<img src="reactLogo.png" style="height: 120px; width: 140px;" alt="React Logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="skillsList">
+                            <li>Bootstrap<img src="bootstrapLogo.png" style="height: 110px; width: 110px;"
+                                              alt="Bootstrap Logo"></li>
+                            <li>SQL<img src="sqlLogo.png" style="height: 120px; width: 100px;" alt="SQL Logo"></li>
+                            <li>Java<img src="javaLogo.png" style="height: 120px; width: 100px;" alt="Java Logo"></li>
+                            <li>Python<img src="pythonLogo.png" style="height: 120px; width: 120px;" alt="Python Logo">
+                            </li>
+                            <li>.NET<img src="aspLogo.png" style="height: 70px; width: 160px;" alt=".NET Logo"></li>
+                            <li>PHP<img src="phpLogo.png" style="height: 120px; width: 160px;" alt="PHP Logo"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="about-scroll"></div>
+                <div data-aos="fade-right" data-aos-once="true" class="aboutWrap container-fluid">
+                    About Me!
+                    <div class="about" id="about">I'm a front end developer with a passion for all things
+                        technology.<br><br> From an early age, I started tinkering with computers(sometimes breaking
+                        them) and the tinkering never stopped. I've setup linux systems and experimented with various
+                        languages and software areas giving me a well-rounded understanding of most current
+                        tech.<br><br> I'm working with the LAMP(Linux, Apache, MySQL, PHP) stack in my current role as
+                        well as utilizing various APIs.
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-once="true" class="contact row">
+                    <div class="col-3"></div>
+                    <div class="col"><a class="bottomLinks" href="https://www.linkedin.com/in/kward937"><img
+                            src="linkedinLogo.png" style="height: 70px; width: 70px;" alt="Linkedin Logo"></a></div>
+                    <div class="col"><a class="bottomLinks" href="mailto:ward.kevinb@gmail.com"><img src="emailLogo.png"
+                                                                                                     style="height: 60px; width: 80px;"
+                                                                                                     alt="Email Logo"></a>
+                    </div>
+                    <div class="col-3" id="contact-scroll"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 </html>
