@@ -40,7 +40,8 @@
         </div>
         <div class="intro" data-aos-once="true" data-aos-duration="1300" data-aos-offset="0" data-aos="fade-up"
              data-aos-anchor=".navbar"><img class="introimage" src="introimage.png" alt="Developer sitting at computer">
-            <div class="introtext">Hello! My name is <span id="kevin">Kevin</span>, and I'm your next great hire.</div>
+            <div class="introtext">Hello! My name is <span id="kevin">Kevin</span>, and I'm a full stack </div>
+            <div id="typewriter"></div>
         </div>
 
     </div>
@@ -107,6 +108,35 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    setTimeout(typeWriter, 750);
+                });
+                const text = ["developer.", "problem solver.", "resolute.", "architect.",]
+                const sleep = (milliseconds) => {
+                    return new Promise(resolve => setTimeout(resolve, milliseconds))
+                }
+                let output = document.getElementById("typewriter");
+
+                async function typeWriter() {
+                    for (let word in text) {
+                        for (let i = 0; i < text[word].length; i++) {
+                            output.innerHTML += text[word].charAt(i);
+                            await sleep(90);
+                        }
+                        await sleep(500);
+                        for (let i = text[word].length; i > 0; i--) {
+                            output.innerHTML = output.innerHTML.slice(0, -1);
+                            await sleep(150);
+                        }
+                    }
+                    setTimeout(typeWriter, 300);
+                }
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                }</script>
+        </footer>
     </main>
 </div>
 </html>
