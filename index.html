@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="stylesheet"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>function myFunction(x) {
-        x.classList.toggle("change");
-    }</script>
-    <title></title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="stylesheet"></script>
+    <title>Kevin Ward - Full Stack</title>
 </head>
 <div class="container-fluid p-0 py-0" style="background-color: black;">
 
@@ -25,15 +22,9 @@
             <a href=#contact-scroll>Contact</a>
             <a href="https://indianhallowcampground.com">Sites I've Built</a>
 
-            <div class="hamburger" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
         </nav>
     </header>
 </div>
-<link rel="stylesheet" href="Portfolio.css">
 <div class="pagewrap">
     <div>
         <div class="main-image">
@@ -108,35 +99,12 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                    setTimeout(typeWriter, 750);
-                });
-                const text = ["developer.", "problem solver.", "resolute.", "architect.",]
-                const sleep = (milliseconds) => {
-                    return new Promise(resolve => setTimeout(resolve, milliseconds))
-                }
-                let output = document.getElementById("typewriter");
-
-                async function typeWriter() {
-                    for (let word in text) {
-                        for (let i = 0; i < text[word].length; i++) {
-                            output.innerHTML += text[word].charAt(i);
-                            await sleep(90);
-                        }
-                        await sleep(500);
-                        for (let i = text[word].length; i > 0; i--) {
-                            output.innerHTML = output.innerHTML.slice(0, -1);
-                            await sleep(150);
-                        }
-                    }
-                    setTimeout(typeWriter, 300);
-                }
-                    function myFunction(x) {
-                        x.classList.toggle("change");
-                }</script>
-        </footer>
+        <script src="typewriter.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                setTimeout(typeWriter, 750);
+            });
+        </script>
     </main>
 </div>
 </html>
