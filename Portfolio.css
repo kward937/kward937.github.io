@@ -20,45 +20,6 @@ html, body {
 
 }
 
-@media (min-width: 580px) {
-    .hamburger, .bar1, .bar2, .bar3 {
-        display: none;
-    }
-}
-
-@media (max-width: 580px) {
-    a:not(.linkedin) {
-        display: none;
-    }
-}
-
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
 .pagewrap {
     background: linear-gradient(-45deg, #57ec00, #ff0000, #002fff, #00f7ff);
     background-size: 400% 400%;
@@ -119,18 +80,18 @@ a:hover {
 }
 
 .introimage {
-    height: 500px;
-    width: 800px;
+    width: 85vh;
 }
 
 .intro {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 80px;
+    font-size: 8vh;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     padding-left: 50px;
     padding-right: 50px;
+    height: 81vh;
 }
 
 nav {
@@ -146,17 +107,16 @@ nav {
     margin-bottom: -100px;
     justify-content: center;
     text-align: center;
-    font-size: 90px;
+    font-size: 4vh;
     color: rgb(0, 0, 0);
 }
 
 
 .skillsList {
     list-style-type: none;
-    padding-top: 10px;
+    padding-top: 45%;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     margin-top: 10%;
-    padding-left: 30%;
     justify-content: center;
 }
 
@@ -164,28 +124,53 @@ li {
     margin: 20px;
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
-    font-size: 50px;
+    font-size: 4vh;
 }
+
+#html5 {
+    max-height: 7vh;
+}
+#bootstrap {
+    max-height: 7vh;
+}
+#sql {
+    max-height: 7vh;
+}
+#javascript {
+    max-height: 7vh;
+}
+#java {
+    max-height: 7vh;
+}
+#sass {
+    max-height: 7vh;
+}
+#python {
+    max-height: 7vh;
+}
+#react {
+    max-height: 7vh;
+}
+#net {
+    max-height: 4vh;
+    margin-bottom: 3.4vh;
+}
+#php {
+    max-height: 6vh;
+}
+
 
 .about {
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
     font-size: 43px;
-    font-weight: 2;
     text-align: center;
     justify-content: center;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
-    padding-left: 180px;
-    padding-right: 200px;
-    padding-top: 0;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 .aboutWrap {
-    background-color: rgba(255, 255, 255, 0.089);
-    width: 107%;
-    margin-left: -50px;
+    width: 115%;
     text-align: center;
     font-size: 90px;
     color: #000000;
@@ -214,4 +199,16 @@ li {
 
 #contact-scroll {
     scroll-margin-top: -1000px;
+}
+
+@media (min-width: 580px) {
+    .bar1, .bar2, .bar3{
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    a:not(.linkedin), .introimage {
+        display: none;
+    }
 }

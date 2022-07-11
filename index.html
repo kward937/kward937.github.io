@@ -8,9 +8,6 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" rel="stylesheet"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>function myFunction(x) {
-        x.classList.toggle("change");
-    }</script>
     <title></title>
 </head>
 <div class="container-fluid p-0 py-0" style="background-color: black;">
@@ -25,11 +22,6 @@
             <a href=#contact-scroll>Contact</a>
             <a href="https://indianhallowcampground.com">Sites I've Built</a>
 
-            <div class="hamburger" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
         </nav>
     </header>
 </div>
@@ -55,38 +47,32 @@
     <main>
         <div>
             <div data-aos="fade-left" data-aos-offset="800" data-aos-duration="1300" data-aos-once="true"
-                 class="skills container-fluid">
+                 class="skills container-fluid ml-0">
                 <div class="skillsTitle">Known Languages/Frameworks</div>
                 <div id="skill-scroll"></div>
                 <div class="row">
                     <div class="col-6">
-                        <ul class="skillsList">
-                            <li style="font-size:80px"></li>
-                            <li>HTML5<img src="html5Logo.png" style="height: 120px; width: 140px;" alt="HTML5 Logo">
-                            </li>
-                            <li>CSS<img src="cssLogo.png" style="height: 120px; width: 95px;" alt="CSS Logo"></li>
-                            <li>Javascript<img src="javascriptLogo.png" style="height: 110px; width: 100px;"
-                                               alt="Javascript Logo"></li>
-                            <li>SASS<img src="sassLogo.png" style="height: 110px; width: 160px;" alt="SASS Logo"></li>
-                            <li>React<img src="reactLogo.png" style="height: 120px; width: 140px;" alt="React Logo">
-                            </li>
+                        <ul class="skillsList pl-4">
+                            <li>HTML5<img id="html5" src="html5Logo.png" alt="HTML5 Logo"></li>
+                            <li>Javascript<img id="javascript" src="javascriptLogo.png" alt="Javascript Logo"></li>
+                            <li>SASS<img id="sass" src="sassLogo.png" alt="SASS Logo"></li>
+                            <li>React<img id="react" src="reactLogo.png"  alt="React Logo"></li>
+                            <li>Bootstrap<img id="bootstrap" src="bootstrapLogo.png" alt="Bootstrap Logo"></li>
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="skillsList">
-                            <li>Bootstrap<img src="bootstrapLogo.png" style="height: 110px; width: 110px;"
-                                              alt="Bootstrap Logo"></li>
-                            <li>SQL<img src="sqlLogo.png" style="height: 120px; width: 100px;" alt="SQL Logo"></li>
-                            <li>Java<img src="javaLogo.png" style="height: 120px; width: 100px;" alt="Java Logo"></li>
-                            <li>Python<img src="pythonLogo.png" style="height: 120px; width: 120px;" alt="Python Logo">
-                            </li>
-                            <li>.NET<img src="aspLogo.png" style="height: 70px; width: 160px;" alt=".NET Logo"></li>
-                            <li>PHP<img src="phpLogo.png" style="height: 120px; width: 160px;" alt="PHP Logo"></li>
+                            <li>SQL<img id="sql" src="sqlLogo.png" alt="SQL Logo"></li>
+                            <li>Java<img id="java" src="javaLogo.png" alt="Java Logo"></li>
+                            <li>Python<img id="python" src="pythonLogo.png" alt="Python Logo"></li>
+                            <li>.NET<img id="net" src="aspLogo.png" alt=".NET Logo"></li>
+                            <li>PHP<img id="php" src="phpLogo.png" alt="PHP Logo"></li>
                         </ul>
                     </div>
                 </div>
+            </div>
                 <div id="about-scroll"></div>
-                <div data-aos="fade-right" data-aos-once="true" class="aboutWrap container-fluid">
+                <div data-aos="fade-right" data-aos-once="true" class="aboutWrap">
                     About Me!
                     <div class="about" id="about">I'm a front end developer with a passion for all things
                         technology.<br><br> From an early age, I started tinkering with computers(sometimes breaking
@@ -106,8 +92,6 @@
                     </div>
                     <div class="col-3" id="contact-scroll"></div>
                 </div>
-            </div>
-        </div>
         <footer>
             <script>
                 document.addEventListener("DOMContentLoaded", () => {
