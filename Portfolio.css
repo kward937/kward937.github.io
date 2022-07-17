@@ -9,7 +9,6 @@
 
 header {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
     background: #333;
 }
 
@@ -17,14 +16,33 @@ html, body {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-
 }
 
+<<<<<<< Updated upstream
+=======
+@media (min-width: 580.01px) {
+    a:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 580px) {
+    a:not(.linkedin, .github) {
+        display: none;
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+>>>>>>> Stashed changes
 .pagewrap {
     background: linear-gradient(-45deg, #57ec00, #ff0000, #002fff, #00f7ff);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -61,7 +79,6 @@ a {
 
 a:hover {
     color: white;
-    transform: scale(1.2);
     text-decoration: none;
 }
 
@@ -73,12 +90,6 @@ a:hover {
     max-height: 82px;
 }
 
-.linkedin {
-    width: 40px;
-    height: 40px;
-
-}
-
 .introimage {
     width: 85vh;
 }
@@ -87,11 +98,20 @@ a:hover {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     color: rgb(0, 0, 0);
+<<<<<<< Updated upstream
     font-size: 8vh;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     padding-left: 50px;
     padding-right: 50px;
     height: 81vh;
+=======
+    font-size: 18vw;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+}
+
+.introwrapper {
+    height: 100vh;
+>>>>>>> Stashed changes
 }
 
 nav {
@@ -103,27 +123,42 @@ nav {
 }
 
 .skillsTitle {
-    padding-top: 20%;
-    margin-bottom: -100px;
     justify-content: center;
     text-align: center;
+<<<<<<< Updated upstream
     font-size: 4vh;
+=======
+    font-size: 10vw;
+>>>>>>> Stashed changes
     color: rgb(0, 0, 0);
 }
 
 
 .skillsList {
     list-style-type: none;
+<<<<<<< Updated upstream
     padding-top: 45%;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     margin-top: 10%;
+=======
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+>>>>>>> Stashed changes
     justify-content: center;
+    margin-left: -10vw;
+    padding-top: 5vw;
+    padding-bottom: 50vw;
+    height: 100vh;
+    scroll-margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+
 li {
-    margin: 20px;
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
+<<<<<<< Updated upstream
     font-size: 4vh;
 }
 
@@ -158,11 +193,27 @@ li {
 #php {
     max-height: 6vh;
 }
+=======
+    font-size: 8vw;
+    height: 40vw;
+    text-align: center;
+    line-height: 15vw;
+}
+
+    li > img {
+        width: 15vw;
+    }
+
+    li > i {
+        font-size: 20vw;
+    }
+>>>>>>> Stashed changes
 
 
 .about {
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
+<<<<<<< Updated upstream
     font-size: 43px;
     text-align: center;
     justify-content: center;
@@ -171,11 +222,33 @@ li {
 
 .aboutWrap {
     width: 115%;
+=======
+    font-size: 7vw;
+    font-weight: 2;
     text-align: center;
-    font-size: 90px;
+    justify-content: center;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 75vh;
+}
+
+.aboutWrap {
+>>>>>>> Stashed changes
+    text-align: center;
+    font-size: 15vw;
     color: #000000;
-    height: 10%;
-    margin-top: 20%;
+}
+
+.currently {
+
+}
+
+.frame {
+    width: 64vw;
+    height: 36vw;
+    border: 1px solid black;
 }
 
 .contact {
@@ -201,6 +274,7 @@ li {
     scroll-margin-top: -1000px;
 }
 
+<<<<<<< Updated upstream
 @media (min-width: 580px) {
     .bar1, .bar2, .bar3{
         display: none;
@@ -210,5 +284,67 @@ li {
 @media (max-width: 580px) {
     a:not(.linkedin), .introimage {
         display: none;
+=======
+@media (max-width: 3840px) {
+
+}
+
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1790px) {
+
+}
+
+@media (max-width: 1590px) {
+
+}
+
+@media (max-width: 1390px) {
+
+}
+
+@media (max-width: 1190px) {
+
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 790px) {
+
+}
+
+@media (max-width: 590px) {
+    .introimage {
+        width: 60vw;
+        height: 40vw;
+    }
+
+    .introtext, #typewriter {
+        font-size: 11vw;
+    }
+
+}
+
+@media (max-width: 490px) {
+.introimage {
+    display: none;
+}
+    a > i {
+     font-size: 10vw;
+ }
+
+    .linkedin {
+        margin-left: auto;
+        margin-right: 12vw
+    }
+
+    .github {
+        margin-right: auto;
+        margin-left: 12vw;
+>>>>>>> Stashed changes
     }
 }
