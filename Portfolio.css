@@ -20,6 +20,10 @@ html, body {
 
 }
 
+body {
+    background-color: #131313
+}
+
 
 
 .hamburger {
@@ -85,12 +89,10 @@ a {
     text-decoration: none;
     font-family: FoundrySterlingOT3W03-Bold, FoundrySterlingOT3W10-Bold, Arial, Helvetica, sans-serif;
     font-weight: 900;
-    right: 0;
 }
 
 a:hover {
-    color: white;
-    transform: scale(1.2);
+    color: #c4c4c4;
     text-decoration: none;
 }
 
@@ -103,7 +105,7 @@ a:hover {
 }
 
 #logo {
-    width: 40px;
+    max-width: 65px;
     height: 40px;
 }
 
@@ -130,7 +132,7 @@ a:hover {
 
 nav {
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
-    background-color: #131313
+    background-color: #131313;
 }
 
 #kevin {
@@ -266,6 +268,17 @@ footer a{
     font-size: 3rem;
     color: #fff;
     display: block;
+}
+
+@media (max-width: 390px) {
+    #logo {
+        max-width: 65px;
+        height: 40px;
+    }
+
+    #skill-scroll {
+        scroll-margin-top: 130px;
+    }
 }
 
 @media (max-width: 580px) {
