@@ -20,17 +20,7 @@ html, body {
 
 }
 
-@media (min-width: 580px) {
-    .hamburger, .bar1, .bar2, .bar3 {
-        display: none;
-    }
-}
 
-@media (max-width: 580px) {
-    a:not(.linkedin) {
-        display: none;
-    }
-}
 
 .hamburger {
     display: inline-block;
@@ -91,7 +81,7 @@ html, body {
 }
 
 a {
-    color: #0077B5;
+    color: #ffffff;
     text-decoration: none;
     font-family: FoundrySterlingOT3W03-Bold, FoundrySterlingOT3W10-Bold, Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -112,29 +102,35 @@ a:hover {
     max-height: 82px;
 }
 
-.linkedin {
+.logo {
     width: 40px;
     height: 40px;
-
 }
 
 .introimage {
-    height: 500px;
-    width: 800px;
+    height: 250px;
+    width: 350px;
 }
 
 .intro {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 80px;
+    font-size: 2.5rem;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
+    height: 490px
+}
+
+#down-arrow {
+    font-size: 10rem;
+    text-align: center;
+    color: #000
 }
 
 nav {
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+    background-color: #131313
 }
 
 #kevin {
@@ -142,21 +138,29 @@ nav {
 }
 
 .skillsTitle {
-    padding-top: 20%;
-    margin-bottom: -100px;
     justify-content: center;
     text-align: center;
-    font-size: 90px;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
+}
+
+.col-6 {
+    justify-content: center;
+}
+
+#logo-div {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.skills {
+    margin-top: 25vh;
 }
 
 
 .skillsList {
     list-style-type: none;
-    padding-top: 10px;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
-    margin-top: 10%;
-    padding-left: 30%;
     justify-content: center;
 }
 
@@ -164,33 +168,28 @@ li {
     margin: 20px;
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
-    font-size: 50px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .about {
     color: rgb(0, 0, 0);
     font-family: montserrat, sans-serif;
-    font-size: 43px;
-    font-weight: 2;
+    font-size: 2rem;
+    font-weight: 1.75;
     text-align: center;
     justify-content: center;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
-    padding-left: 180px;
-    padding-right: 200px;
-    padding-top: 0;
-    margin-bottom: 0;
-    margin-top: 0;
 }
 
 .aboutWrap {
-    background-color: rgba(255, 255, 255, 0.089);
-    width: 107%;
-    margin-left: -50px;
+    margin-top: 10vh;
+}
+
+#about-me {
     text-align: center;
-    font-size: 90px;
-    color: #000000;
-    height: 10%;
-    margin-top: 20%;
+    font-size: 2.75rem;
+    color: #000
 }
 
 .contact {
@@ -204,14 +203,119 @@ li {
     vertical-align: text-top;
 }
 
+li img {
+    width: 15vw;
+    display: block;
+    margin: 0 auto
+}
+
+#html5 {
+    width: 13.5vw
+}
+
+#css {
+    width: 16vw
+}
+
+#sql {
+    width: 14.8vw
+}
+
+#jscript {
+    width: 17vw
+}
+
+#sass {
+    width: 18vw;
+    height: 14.25vw
+}
+
+#java {
+   height: 19vw
+}
+
+#boot {
+    width: 15.25vw
+}
+
+#php {
+    width: 17vw
+}
+
 #skill-scroll {
-    scroll-margin-top: 20px;
+    scroll-margin-top: 130px;
 }
 
 #about-scroll {
-    scroll-margin-top: -300px;
+    scroll-margin-top: -75px;
 }
 
 #contact-scroll {
     scroll-margin-top: -1000px;
 }
+
+footer{
+    align-content: space-evenly;
+    height: 8vh;
+    color: #fff;
+    background-color: #131313;
+    text-align: center;
+}
+
+footer a{
+    font-size: 3rem;
+    color: #fff;
+    display: block;
+}
+
+@media (max-width: 580px) {
+    li img {
+        width: 10vw;
+    }
+
+    #sql {
+        width: 15vw
+    }
+
+    #java {
+        width: 11.5vw;
+    }
+
+    #python {
+        width: 14.8vw;
+    }
+
+    #skill-scroll {
+        scroll-margin-top: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    li img {
+        width: 5vw;
+    }
+
+    #html {
+        width: 5vw;
+    }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1800px) {
+}
+
+@media (max-width: 1920px) {
+
+}
+

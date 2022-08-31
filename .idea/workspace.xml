@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e396d13-8076-4807-8780-994d3e7b4c3f" name="Changes" comment="" />
+    <list default="true" id="3e396d13-8076-4807-8780-994d3e7b4c3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kward937.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html5Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/html5Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +51,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/projects/trakker2",
+    "last_opened_file_path": "/var/www/projects/kward937.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +63,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
@@ -70,6 +87,7 @@
       <workItem from="1657111562054" duration="1555000" />
       <workItem from="1657491364520" duration="323000" />
       <workItem from="1657495688078" duration="28062000" />
+      <workItem from="1661906733215" duration="11466000" />
     </task>
     <servers />
   </component>
