@@ -9,8 +9,9 @@
 
 header {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
     background: #333;
+    top: 0;
+    position: fixed;
 }
 
 html, body {
@@ -69,12 +70,20 @@ body {
     scroll-snap-align: start;
 }
 
+.snap-end {
+    scroll-snap-align: end;
+}
+
 #exp-list {
     margin-left: 1.3rem;
 }
 
 .experienceWrap {
     margin-top: 30vh;
+}
+
+.introWrap {
+    padding-top: 5vh;
 }
 
 @keyframes gradient {
@@ -185,6 +194,7 @@ nav {
 
 .skills {
     margin-top: 16rem;
+    padding-bottom: 8vh;
 }
 
 
@@ -216,8 +226,14 @@ li {
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
 }
 
+.fiveWrap {
+    margin-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
 .aboutWrap {
     margin-top: 24vh;
+    padding-top: 10vh;
 }
 
 #about-me {
@@ -294,6 +310,8 @@ footer{
     color: #fff;
     background-color: #131313;
     text-align: center;
+    top: 100vh;
+    margin-bottom: -50px;
 }
 
 footer a{

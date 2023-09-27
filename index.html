@@ -26,7 +26,7 @@
 </head>
 <div class="container-fluid p-0 py-0" style="background-color: black;">
 
-    <header id="home">
+    <header id="home" class="w-100">
         <nav class="navbar navbar-expand-xxl navbar-dark py-2">
             <img id="logo" src="logo-white.png" alt="Developer Logo">
             <a href=#skill-scroll>Skills</a>
@@ -37,7 +37,7 @@
 </div>
 <main>
     <div class="pagewrap">
-        <div class="snap">
+        <div class="snap introWrap">
             <div class="main-image">
             </div>
             <div class="intro px-4 mb-2 d-flex flex-column">
@@ -83,20 +83,20 @@
             </div>
         </div>
         <div class="aboutWrap container-fluid snap-top">
-            <h1 id="about-me" class="pt-5 text-center">About Me</h1>
+            <h1 id="about-me" class="pt-5 text-center mb-3">About Me</h1>
             <p class="about px-3" id="about">I'm a full stack developer with a passion for all things
                 technology.<br><br> From an early age, I started tinkering with computers (sometimes breaking
                 them), and the tinkering never stopped.
             </p>
         </div>
-        <div class="5Wrap container-fluid snap-top">
-            <h1 id="about-me" class="pt-5 text-center">5 Years from Now?</h1>
-            <p class="about px-3" id="about">I would like to be considered a senior in the field, able to jump into most projects and bring them to completion.
+        <div class="fiveWrap container-fluid snap-end">
+            <h1 class="pt-5 text-center">In 5 Years...</h1>
+            <p class="px-3 about">I would like to be considered a senior in the field, able to jump into most
+                projects and bring them to completion.
             </p>
         </div>
     </div>
-    <a href="/privacypolicy.html" class="text-center my-4 font-weight-bold"><h3><strong>Privacy Statement</strong>
-    </h3></a>
+
     <script src="typewriter.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -105,9 +105,15 @@
     </script>
 </main>
 <footer class="row mx-0 pt-2">
-    <a class="col" href="https://www.linkedin.com/in/kward937"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a class="col" href="https://github.com/kward937"><i class="fa-brands fa-github"></i></a>
-    <a class="col" href="mailto:ward.kevinb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="/privacypolicy.html" class="text-center font-weight-bold pt-4 mx-auto">
+        <h3 class="mb-0"><strong>Privacy Statement</strong>
+        </h3>
+    </a>
+    <div class="d-flex w-100">
+        <a class="col" href="https://www.linkedin.com/in/kward937"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="col" href="https://github.com/kward937"><i class="fa-brands fa-github"></i></a>
+        <a class="col" href="mailto:ward.kevinb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
 </footer>
 <script type="text/javascript">
     window._mfq = window._mfq || [];
