@@ -4,7 +4,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7X9G4BPYJ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'G-J7X9G4BPYJ');
@@ -15,89 +19,108 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Kevin Ward - Full Stack</title>
 </head>
 <div class="container-fluid p-0 py-0" style="background-color: black;">
 
-    <header id="home">
+    <header id="home" class="w-100">
         <nav class="navbar navbar-expand-xxl navbar-dark py-2">
             <img id="logo" src="logo-white.png" alt="Developer Logo">
-            <a  href=#skill-scroll>Skills</a>
-            <a  href=#about-scroll>About</a>
-            <a  href="https://indianhallowcampground.com">Sites I've Built</a>
+            <a href=#skill-scroll>Skills</a>
+            <a href=#about-scroll>About</a>
+            <a href="https://indianhallowcampground.com">Sites I've Built</a>
         </nav>
     </header>
 </div>
-<div class="pagewrap">
-    <div>
-        <div class="main-image">
+<main>
+    <div class="pagewrap">
+        <div class="snap introWrap">
+            <div class="main-image">
+            </div>
+            <div class="intro px-4 mb-2 d-flex flex-column">
+                <img class="introimage mx-auto" src="https://i.imgur.com/oUGZDfg.jpg"
+                     alt="Portrait Photo of Developer">
+                <h1 id="hello">Hello!</h1>
+                <h2 class="introtext mb-0">My name is <span id="kevin">Kevin</span>, and I'm a full stack</h2>
+                <h2 id="typewriter"></h2>
+            </div>
+            <a href=#skill-scroll>
+            </a>
         </div>
-        <div class="intro px-4"><img class="introimage" src="introimage.png" alt="Developer sitting at computer">
-
-            <div class="introtext">Hello! My name is <span id="kevin">Kevin</span>, and I'm a full stack</div>
-            <div id="typewriter"></div>
+        <div class="skills container-fluid snap">
+            <h1 class="text-center">My Skills</h1>
+            <div id="skill-scroll"></div>
+            <div class="row">
+                <div class="col-6">
+                    <ul class="skillsList p-0">
+                        <li>HTML5<img id="html5" src="html5Logo.png" alt="HTML5 Logo"></li>
+                        <li>Javascript<img id="jscript" src="javascriptLogo.png" alt="Javascript Logo"></li>
+                        <li>SASS<img id="sass" src="sassLogo.png" alt="SASS Logo"></li>
+                    </ul>
                 </div>
-
-        <div id="down-arrow"><i class="fa-solid fa-arrow-down"></i></div>
-    </div>
-    <main>
-        <div>
-            <div class="skills container-fluid">
-                <div class="skillsTitle">Known Languages/Frameworks</div>
-                <div id="skill-scroll"></div>
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="skillsList p-0">
-                            <li>HTML5<img id="html5" src="html5Logo.png" alt="HTML5 Logo"></li>
-                            <li>CSS<img id="css" src="cssLogo.png" alt="CSS Logo"></li>
-                            <li>Javascript<img id="jscript" src="javascriptLogo.png" alt="Javascript Logo"></li>
-                            <li>SASS<img id="sass" src="sassLogo.png" alt="SASS Logo"></li>
-                            <li>React<img id="react" src="reactLogo.png" alt="React Logo"></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul class="skillsList p-0">
-                            <li>Bootstrap<img id="boot" src="bootstrapLogo.png" alt="Bootstrap Logo"></li>
-                            <li>SQL<img id="sql" src="sqlLogo.png" alt="SQL Logo"></li>
-                            <li>Java<img id="java" src="javaLogo.png" alt="Java Logo"></li>
-                            <li>Python<img id="python" src="pythonLogo.png" alt="Python Logo"></li>
-                            <li>PHP<img id="php" src="phpLogo.png" alt="PHP Logo"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="about-scroll"></div>
-                <div class="aboutWrap container-fluid">
-                    <p id="about-me">About Me!</p>
-                    <div class="about px-3" id="about">I'm a front end developer with a passion for all things
-                        technology.<br><br> From an early age, I started tinkering with computers (sometimes breaking
-                        them), and the tinkering never stopped. I've setup linux systems and experimented with various
-                        languages and software areas giving me a well-rounded understanding of most current
-                        tech.<br><br> I'm working with the LAMP(Linux, Apache, MySQL, PHP) stack in my current role as
-                        well as utilizing various APIs.
-                    </div>
+                <div class="col-6">
+                    <ul class="skillsList p-0">
+                        <li>Bootstrap<img id="boot" src="bootstrapLogo.png" alt="Bootstrap Logo"></li>
+                        <li>SQL<img id="sql" src="sqlLogo.png" alt="SQL Logo"></li>
+                        <li>PHP<img id="php" src="phpLogo.png" alt="PHP Logo"></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <a href="/privacypolicy.html" class="text-center my-4 font-weight-bold"><h1><strong>Privacy Statement</strong></h1></a>
-        <script src="typewriter.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                setTimeout(typeWriter, 750);
-            });
-        </script>
-    </main>
-</div>
+        <div class="experienceWrap snap">
+            <h1 class="text-center mb-4">Experience</h1>
+            <div id="exp-list">
+                <h3>API implementations</h3>
+                <h3>Responsive Design</h3>
+                <h3>Drupal/Custom Frameworks</h3>
+                <h3>Unit Testing</h3>
+                <h3>CICD/Pipelines</h3>
+                <h3>Git</h3>
+                <h3>LAMP Stack</h3>
+            </div>
+        </div>
+        <div class="aboutWrap container-fluid snap-top">
+            <h1 id="about-me" class="pt-5 text-center mb-3">About Me</h1>
+            <p class="about px-3" id="about">I'm a full stack developer with a passion for all things
+                technology.<br><br> From an early age, I started tinkering with computers (sometimes breaking
+                them), and the tinkering never stopped.
+            </p>
+        </div>
+        <div class="fiveWrap container-fluid snap-end">
+            <h1 class="pt-5 text-center">In 5 Years...</h1>
+            <p class="px-3 about">I would like to be considered a senior in the field, able to jump into most
+                projects and bring them to completion.
+            </p>
+        </div>
+    </div>
+
+    <script src="typewriter.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeWriter, 750);
+        });
+    </script>
+</main>
 <footer class="row mx-0 pt-2">
-    <a class="col" href="https://www.linkedin.com/in/kward937"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a class="col" href="https://github.com/kward937"><i class="fa-brands fa-github"></i></a>
-    <a class="col" href="mailto:ward.kevinb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="/privacypolicy.html" class="text-center font-weight-bold pt-4 mx-auto">
+        <h3 class="mb-0"><strong>Privacy Statement</strong>
+        </h3>
+    </a>
+    <div class="d-flex w-100">
+        <a class="col" href="https://www.linkedin.com/in/kward937"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="col" href="https://github.com/kward937"><i class="fa-brands fa-github"></i></a>
+        <a class="col" href="mailto:ward.kevinb@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
 </footer>
 <script type="text/javascript">
     window._mfq = window._mfq || [];
-    (function() {
+    (function () {
         var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.defer = true;
+        mf.type = "text/javascript";
+        mf.defer = true;
         mf.src = "//cdn.mouseflow.com/projects/04e9ee79-69f1-4937-bbef-740f4d349e5f.js";
         document.getElementsByTagName("head")[0].appendChild(mf);
     })();
