@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e396d13-8076-4807-8780-994d3e7b4c3f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kward937.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kward937.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aspLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/aspLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrapLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrapLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cssLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/cssLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/emailLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html5Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/html5Logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/introimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/javaLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascriptLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/javascriptLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linkedinLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/linkedinLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo-javascript-pattern-copyright-framework-free-javascript-logo-label-text-symbol-trademark-transparent-png-1498648.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo-javascript-pattern-copyright-framework-free-javascript-logo-label-text-symbol-trademark-transparent-png-1498648.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/phpLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/pythonLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/reactLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sassLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sassLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/sqlLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typewriter.js" beforeDir="false" afterPath="$PROJECT_DIR$/typewriter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,6 +58,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2BZNeLsB0cN1zVO6X447opcVrjs" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -42,19 +71,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/www/projects/rvw.com-v3.1",
+    "last_opened_file_path": "/var/www/projects/kward937.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -82,7 +113,10 @@
       <workItem from="1657491364520" duration="323000" />
       <workItem from="1657495688078" duration="28062000" />
       <workItem from="1661906733215" duration="11466000" />
-      <workItem from="1661952281469" duration="6464000" />
+      <workItem from="1661952281469" duration="7097000" />
+      <workItem from="1661961486196" duration="56000" />
+      <workItem from="1663636126718" duration="3128000" />
+      <workItem from="1695754637039" duration="17976000" />
     </task>
     <servers />
   </component>

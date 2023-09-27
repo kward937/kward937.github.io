@@ -17,14 +17,11 @@ html, body {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-
 }
 
 body {
     background-color: #131313
 }
-
-
 
 .hamburger {
     display: inline-block;
@@ -57,7 +54,27 @@ body {
     background: linear-gradient(-45deg, #57ec00, #ff0000, #002fff, #00f7ff);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    overflow-x: hidden
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+.snap {
+    scroll-snap-align: center;
+}
+
+.snap-top {
+    scroll-snap-align: start;
+}
+
+#exp-list {
+    margin-left: 1.3rem;
+}
+
+.experienceWrap {
+    margin-top: 30vh;
 }
 
 @keyframes gradient {
@@ -110,8 +127,14 @@ a:hover {
 }
 
 .introimage {
-    height: 250px;
-    width: 350px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px #484848;
+}
+
+#hello {
+    margin-top: 5rem;
 }
 
 .intro {
@@ -121,13 +144,18 @@ a:hover {
     font-size: 2.5rem;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     justify-content: center;
-    height: 490px
+    margin-top: 10rem;
 }
 
 #down-arrow {
-    font-size: 10rem;
+    font-size: 6rem;
     text-align: center;
-    color: #000
+    color: #000;
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    padding-bottom: 3px;
 }
 
 nav {
@@ -142,7 +170,7 @@ nav {
 .skillsTitle {
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(0, 0, 0);
 }
 
@@ -156,7 +184,7 @@ nav {
 }
 
 .skills {
-    margin-top: 25vh;
+    margin-top: 16rem;
 }
 
 
@@ -164,6 +192,10 @@ nav {
     list-style-type: none;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
     justify-content: center;
+}
+
+#typewriter {
+    min-height: 60px;
 }
 
 li {
@@ -185,7 +217,7 @@ li {
 }
 
 .aboutWrap {
-    margin-top: 10vh;
+    margin-top: 24vh;
 }
 
 #about-me {
@@ -270,428 +302,428 @@ footer a{
     display: block;
 }
 
-@media (max-width: 390px) {
-    #logo {
-        max-width: 65px;
-        height: 40px;
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 130px;
-    }
-}
-
-@media (max-width: 580px) {
-    li img {
-        width: 10vw;
-    }
-
-    #sql {
-        width: 15vw
-    }
-
-    #java {
-        width: 11.5vw;
-    }
-
-    #python {
-        width: 14.8vw;
-    }
-
-    #html5 {
-        width: 13.75vw
-    }
-
-    #css {
-        width: 16.15vw;
-    }
-
-    #sass {
-        width: 20vw;
-    }
-
-    #react {
-        width: 11vw;
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 70px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    li img {
-        width: 8vw;
-    }
-
-    #java {
-        height: 12vw;
-        width: 10vw
-    }
-
-    #boot, #react {
-        width: 10vw;
-    }
-
-    #sql {
-        width: 9.85vw;
-    }
-
-    #html5 {
-        width: 8.75vw;
-    }
-
-    #css, #jscript {
-        width: 10.75vw;
-    }
-
-    #html {
-        width: 2vw;
-    }
-
-    #sass {
-        height: 8vw;
-        width: 11vw;
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 80px
-    }
-}
-
-@media (max-width: 991.98px) {
-    li img {
-        width: 7vw;
-    }
-
-    #java {
-        height: 10.85vw;
-        width: 9vw
-    }
-
-    #boot, #react {
-        width: 9vw;
-    }
-
-    #sql {
-        width: 8.85vw;
-    }
-
-    #html5 {
-        width: 7.75vw;
-    }
-
-    #css, #jscript {
-        width: 9.75vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 8vw;
-        width: 11vw;
-    }
-
-    #python {
-        width: 8.25vw;
-    }
-
-    #php {
-        width: 12vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 5rem
-    }
-
-    .about {
-        font-size: 2.15rem
-    }
-}
-
-@media (max-width: 1199.98px) {
-    li img {
-        width: 5vw;
-    }
-
-    #java {
-        height: 7.35vw;
-        width:7vw
-    }
-
-    #boot, #react {
-        width: 7.65vw;
-    }
-
-    #sql {
-        width: 6.15vw;
-    }
-
-    #html5 {
-        width: 6.5vw;
-    }
-
-    #css, #jscript {
-        width: 6.75vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 8vw;
-        width: 11vw;
-    }
-
-    #python {
-        width: 8.25vw;
-    }
-
-    #php {
-        width: 12vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 5rem
-    }
-
-    .about {
-        font-size: 2.4rem
-    }
-}
-
-@media (max-width: 1400px) {
-    li img {
-        width: 3vw;
-    }
-
-    #java {
-        height: 6.4vw;
-        width:7vw
-    }
-
-    #boot, #react {
-        width: 6.4vw;
-    }
-
-    #sql {
-        width: 5vw;
-    }
-
-    #html5 {
-        width: 5.5vw;
-    }
-
-    #css, #jscript {
-        width: 5.75vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 7vw;
-        width: 10vw;
-    }
-
-    #python {
-        width: 7.2vw;
-    }
-
-    #php {
-        width: 12vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 5rem
-    }
-
-    .about {
-        font-size: 2.6rem
-    }
-}
-
-@media (max-width: 1600px) {
-    li img {
-        width: 3vw;
-    }
-
-    #java {
-        height: 6.25vw;
-        width:6vw
-    }
-
-    #boot, #react {
-        width: 5.75vw;
-    }
-
-    #sql {
-        width: 4.5vw;
-    }
-
-    #html5 {
-        width: 5vw;
-    }
-
-    #css, #jscript {
-        width: 5.25vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 6vw;
-        width: 10vw;
-    }
-
-    #python {
-        width: 6.2vw;
-    }
-
-    #php {
-        width: 12vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 5rem
-    }
-
-    .about {
-        font-size: 2.6rem
-    }
-}
-
-@media (max-width: 1800px) {
-    li img {
-        width: 3vw;
-    }
-
-    #java {
-        height: 5.1vw;
-        width: 5vw
-    }
-
-    #boot, #react {
-        width: 4.9vw;
-    }
-
-    #sql {
-        width: 4.1vw;
-    }
-
-    #html5 {
-        width: 4.5vw;
-    }
-
-    #css, #jscript {
-        width: 4.5vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 5vw;
-        width: 8.5vw;
-    }
-
-    #python {
-        width: 5vw;
-    }
-
-    #php {
-        width: 10vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 5rem
-    }
-
-    .about {
-        font-size: 2.8rem
-    }
-}
-
-@media (max-width: 1920px) {
-    li img {
-        width: 3vw;
-    }
-
-    #java {
-        height: 5.1vw;
-        width: 5vw
-    }
-
-    #boot, #react {
-        width: 4.9vw;
-    }
-
-    #sql {
-        width: 4.1vw;
-    }
-
-    #html5 {
-        width: 4.5vw;
-    }
-
-    #css, #jscript {
-        width: 4.5vw;
-    }
-
-    #html {
-        width: 1.75vw;
-    }
-
-    #sass {
-        height: 5vw;
-        width: 8.5vw;
-    }
-
-    #python {
-        width: 5vw;
-    }
-
-    #php {
-        width: 10vw
-    }
-
-    #skill-scroll {
-        scroll-margin-top: 50px
-    }
-
-    #about-me {
-        font-size: 6rem
-    }
-
-    .about {
-        font-size: 2.9rem
-    }
-}
+/*@media (max-width: 390px) {*/
+/*    #logo {*/
+/*        max-width: 65px;*/
+/*        height: 40px;*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 130px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 580px) {*/
+/*    li img {*/
+/*        width: 10vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 15vw*/
+/*    }*/
+
+/*    #java {*/
+/*        width: 11.5vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 14.8vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 13.75vw*/
+/*    }*/
+
+/*    #css {*/
+/*        width: 16.15vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        width: 20vw;*/
+/*    }*/
+
+/*    #react {*/
+/*        width: 11vw;*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 70px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 767.98px) {*/
+/*    li img {*/
+/*        width: 8vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 12vw;*/
+/*        width: 10vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 10vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 9.85vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 8.75vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 10.75vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 2vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 8vw;*/
+/*        width: 11vw;*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 80px*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 991.98px) {*/
+/*    li img {*/
+/*        width: 7vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 10.85vw;*/
+/*        width: 9vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 9vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 8.85vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 7.75vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 9.75vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 8vw;*/
+/*        width: 11vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 8.25vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 12vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 5rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.15rem*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1199.98px) {*/
+/*    li img {*/
+/*        width: 5vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 7.35vw;*/
+/*        width:7vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 7.65vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 6.15vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 6.5vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 6.75vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 8vw;*/
+/*        width: 11vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 8.25vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 12vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 5rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.4rem*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1400px) {*/
+/*    li img {*/
+/*        width: 3vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 6.4vw;*/
+/*        width:7vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 6.4vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 5vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 5.5vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 5.75vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 7vw;*/
+/*        width: 10vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 7.2vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 12vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 5rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.6rem*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1600px) {*/
+/*    li img {*/
+/*        width: 3vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 6.25vw;*/
+/*        width:6vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 5.75vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 4.5vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 5vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 5.25vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 6vw;*/
+/*        width: 10vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 6.2vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 12vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 5rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.6rem*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1800px) {*/
+/*    li img {*/
+/*        width: 3vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 5.1vw;*/
+/*        width: 5vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 4.9vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 4.1vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 4.5vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 4.5vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 5vw;*/
+/*        width: 8.5vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 5vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 10vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 5rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.8rem*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1800px) {*/
+/*    li img {*/
+/*        width: 3vw;*/
+/*    }*/
+
+/*    #java {*/
+/*        height: 5.1vw;*/
+/*        width: 5vw*/
+/*    }*/
+
+/*    #boot, #react {*/
+/*        width: 4.9vw;*/
+/*    }*/
+
+/*    #sql {*/
+/*        width: 4.1vw;*/
+/*    }*/
+
+/*    #html5 {*/
+/*        width: 4.5vw;*/
+/*    }*/
+
+/*    #css, #jscript {*/
+/*        width: 4.5vw;*/
+/*    }*/
+
+/*    #html {*/
+/*        width: 1.75vw;*/
+/*    }*/
+
+/*    #sass {*/
+/*        height: 5vw;*/
+/*        width: 8.5vw;*/
+/*    }*/
+
+/*    #python {*/
+/*        width: 5vw;*/
+/*    }*/
+
+/*    #php {*/
+/*        width: 10vw*/
+/*    }*/
+
+/*    #skill-scroll {*/
+/*        scroll-margin-top: 50px*/
+/*    }*/
+
+/*    #about-me {*/
+/*        font-size: 6rem*/
+/*    }*/
+
+/*    .about {*/
+/*        font-size: 2.9rem*/
+/*    }*/
+/*}*/
 
