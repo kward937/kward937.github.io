@@ -144,6 +144,11 @@ a:hover {
     box-shadow: 0 0 20px 5px #484848;
 }
 
+.intro, .skills, .experienceWrap, .aboutWrap, .fiveWrap {
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.24);
+    color: rgb(0, 0, 0);
+}
+
 #hello {
     margin-top: 5rem;
 }
